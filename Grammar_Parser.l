@@ -1,6 +1,6 @@
 %{
 	// Considered # as Epsilon
-	// Change input file name on line no. 525 or replace the grammar in input.txt file
+	// Change input file name on line no. 521 or replace the grammar in input.txt file
 	
 	// Sample Grammar Format
 	// S -> A
