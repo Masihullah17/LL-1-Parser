@@ -1,0 +1,44 @@
+Comment : %CFG is given below
+
+Comment : %Comment begins with a %
+
+Comment : %Start symbol is always S
+
+Comment : % Variables are A, B, C, etc. Order is also same i.e., S, A, B, C, ...
+
+Starting non-terminal : S
+No of Productions : 2
+
+Extracted productions successfully
+S -> aA  
+A -> AAa  
+
+Eliminated Left Recursion
+S -> aA  
+B -> AaB  
+B -> #  
+
+Done Left Factoring
+S -> aA  
+B -> AaB  
+B -> #  
+
+Calculated Firsts of non terminals
+First(S) = {a}
+First(A) = {}
+First(B) = {#}
+
+Calculated Follows of non terminals
+Follow(S) = {$}
+Follow(A) = {$a}
+Follow(B) = {}
+
+Parse Table
+   |  		a		|		$		|
+------------------------------------------------------------------
+S  |  	S -> aA  		 | 	 -- 			 | 	
+A  |  	 -- 			 | 	 -- 			 | 	
+B  |  	 -- 			 | 	 -- 			 | 	
+
+Given grammar is LL(1) grammar.
+

@@ -1,0 +1,45 @@
+
+
+Starting non-terminal : S
+No of Productions : 4
+
+Extracted productions successfully
+S -> E  
+E -> E+E  
+E -> ExE  
+E -> a  
+
+Eliminated Left Recursion
+S -> E  
+A -> +EA  
+A -> xEA  
+E -> aA  
+A -> #  
+
+Done Left Factoring
+S -> E  
+A -> +EA  
+A -> xEA  
+E -> aA  
+A -> #  
+
+Calculated Firsts of non terminals
+First(S) = {a}
+First(E) = {a}
+First(A) = {+x#}
+
+Calculated Follows of non terminals
+Follow(S) = {$}
+Follow(E) = {$+x}
+Follow(A) = {$+x}
+
+Parse Table
+   |  		+		|		x		|		a		|		$		|
+----------------------------------------------------------------------------------------------------------------------------------
+S  |  	 -- 			 | 	 -- 			 | 	S -> E  		 | 	 -- 			 | 	
+E  |  	 -- 			 | 	 -- 			 | 	E -> aA  		 | 	 -- 			 | 	
+A  |  	A -> +EA  || A -> #  	 | 	A -> xEA  || A -> #  	 | 	 -- 			 | 	A -> #  		 | 	
+
+Given grammar is not LL(1) grammar.
+Reason : Contains more than one production in same cell.
+

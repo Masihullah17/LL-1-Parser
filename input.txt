@@ -1,0 +1,4 @@
+%CFG is given below
+%Comment begins with a %
+S -> aA %Start symbol is always S
+A -> AAa % Variables are A, B, C, etc. Order is also same i.e., S, A, B, C, ...

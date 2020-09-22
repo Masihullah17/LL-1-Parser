@@ -1,0 +1,63 @@
+
+
+
+
+Starting non-terminal : S
+No of Productions : 6
+
+Extracted productions successfully
+S -> E  
+E -> E+T  
+E -> T  
+T -> TxF  
+T -> F  
+F -> b  
+
+Eliminated Left Recursion
+S -> E  
+A -> +TA  
+E -> T  
+B -> xFB  
+T -> F  
+F -> b  
+A -> #  
+B -> #  
+
+Done Left Factoring
+S -> E  
+A -> +TA  
+E -> T  
+B -> xFB  
+T -> F  
+F -> b  
+A -> #  
+B -> #  
+
+Calculated Firsts of non terminals
+First(S) = {b}
+First(E) = {b}
+First(T) = {b}
+First(F) = {b}
+First(A) = {+#}
+First(B) = {x#}
+
+Calculated Follows of non terminals
+Follow(S) = {$}
+Follow(E) = {$}
+Follow(T) = {+$}
+Follow(F) = {x+$}
+Follow(A) = {}
+Follow(B) = {}
+
+Parse Table
+   |  		+		|		x		|		b		|		$		|
+----------------------------------------------------------------------------------------------------------------------------------
+S  |  	 -- 			 | 	 -- 			 | 	S -> E  		 | 	 -- 			 | 	
+E  |  	 -- 			 | 	 -- 			 | 	E -> T  		 | 	 -- 			 | 	
+T  |  	 -- 			 | 	 -- 			 | 	T -> F  		 | 	 -- 			 | 	
+F  |  	 -- 			 | 	 -- 			 | 	F -> b  		 | 	 -- 			 | 	
+A  |  	A -> +TA  		 | 	 -- 			 | 	 -- 			 | 	 -- 			 | 	
+B  |  	 -- 			 | 	B -> xFB  		 | 	 -- 			 | 	 -- 			 | 	
+
+Given grammar is LL(1) grammar.
+
