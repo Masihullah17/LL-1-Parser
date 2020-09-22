@@ -23,24 +23,24 @@ Assuming terminal/command prompt is opened in the current folder.
 
 #### To run the executables on Linux :
 ```
-	./Executables/Windows/testcase0
+./Executables/Windows/testcase0
  ```
 
 #### To run the executables on Windows :
 ```
-  .\Executables\Windows\testcase0.exe
- ```
+.\Executables\Windows\testcase0.exe
+```
 
 #### To compile & execute the program from scratch on Linux :
 ```
-	lex Grammar_Parser.l
-	gcc -o custom_testcase lex.yy.c -ll
-	./custom_testcase
+lex Grammar_Parser.l
+gcc -o custom_testcase lex.yy.c -ll
+./custom_testcase
 ```
 
 #### To compile & execute the program from scratch on Windows :
 ```
-	flex Grammar_Parser.l
-	gcc -o custom_testcase lex.yy.c
-	.\custom_testcase.exe
+flex Grammar_Parser.l
+gcc -o custom_testcase lex.yy.c
+.\custom_testcase.exe
 ```
