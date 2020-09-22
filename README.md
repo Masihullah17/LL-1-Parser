@@ -6,7 +6,6 @@
 #### Whole program is written using only C lanugage and lex.
 
 * In Grammar_Parser.l, Change input file name on line no. 525 or replace the grammar in input.txt file, to run custom grammar.
-* Grammar_Parser.l file will be uploaded soon... Stay Tuned :)
 
 Sample Grammar Format in input file
 ```
