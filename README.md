@@ -24,7 +24,7 @@ Assuming terminal/command prompt is opened in the current folder.
 
 #### To run the executables on Linux :
 ```
-./Executables/Windows/testcase0
+./Executables/Linux/testcase0
  ```
 
 #### To run the executables on Windows :
